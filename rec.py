@@ -33,5 +33,5 @@ async def recstart(message: Message,client:Client):
             str1 = str1 + f"[{y}](tg://user?id={y}) 封禁成功\n"
         except:
             str1 = str1 + f"[{y}](tg://user?id={y}) 封禁失败\n"
-        await asyncio.sleep(3)
-    await message.edit(str1)
+        await asyncio.sleep(1)
+        await message.edit(str1)
