@@ -52,7 +52,7 @@ async def recstart(message: Message,client:Client):
 @listener(command="recsuper",
           description="自动批量封禁表态用户-跨群执法",
           usage="直接回复一条被表态的消息即可")
-async def recstart(message: Message,client:Client):
+async def recstartkq(message: Message,client:Client):
     uuid = getUserSuper()
     await message.edit("跨群执法 - 骚扰用户获取成功，开始自动封禁...")
     str1 = ""
